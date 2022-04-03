@@ -1,0 +1,30 @@
+#navbar {
+    flex-direction: row-reverse;
+}
+
+.navbar {
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.nav-link.active {
+    font-weight: 700;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+
+
+/*MEDIUM UP STYLES*/
+@media (min-width: 768px) { 
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 2.5rem;
+    }
+ }
