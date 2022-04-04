@@ -20,11 +20,27 @@ body {
     font-weight: 400;
 }
 
+.background {
+    background-color: #323232;
+}
+ img {
+    width: 100%;
+ }
 
+ footer {
+     border-top: 1px solid #323232;
+     margin-top: 100px;
+ }
 
 /*MEDIUM UP STYLES*/
 @media (min-width: 768px) { 
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-left: 2.5rem;
     }
+
+    .background {
+        margin-top: 20px;
+    }
+
  }
+
