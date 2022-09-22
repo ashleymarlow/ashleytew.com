@@ -5,6 +5,14 @@
 .navbar {
     padding-top: 30px;
     padding-bottom: 60px;
+    text-transform: uppercase;
+    font-family: 'Archivo', sans-serif;
+    align-items: normal;
+}
+
+.navbar-expand-lg .navbar-nav {
+    flex-direction: column;
+    line-height: 15px;
 }
 
 footer .navbar-brand {
@@ -20,43 +28,157 @@ footer .navbar-brand {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
 }
 
-.background {
-    background-color: #323232;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Archivo', sans-serif;
 }
- img {
+
+p {
+    line-height: 26px;
+    font-size: 16px;
+}
+
+.portfolio .full-project-image {
+    width: 85%;
+    border-radius: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+img {
     width: 100%;
- }
+}
 
- footer {
-     border-top: 1px solid #323232;
-     margin-top: 100px;
- }
+footer {
+    border-top: 1px solid #323232;
+    margin-top: 100px;
+}
 
- h1 {
-    font-size: 50px;
- }
+h1 {
+    font-size: 86px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
 
- h2 {
-    font-size: 30px;
- }
+h2 {
+    font-size: 68px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #323232;
+    display: inline;
+}
 
- h3 {
-    font-size: 25px;
+h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+span.secondary-font { 
+    font-family: 'Merriweather', serif;
+    font-size: 69px;
+    text-transform: lowercase;
+    font-style: italic;
     font-weight: 400;
-    line-height: 152%;
- }
+}
 
- .about-img {
-    background-color: #323232;
-    height: 500px;
-    margin-top: 40px;
- }
+.website-badge {
+    width: 90px;
+    animation-name: rotate-badge;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
 
- 
+@keyframes rotate-badge {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+
+.top-row {
+    margin-bottom: 65px;
+}
+
+.bottom-row .col-12 {
+    justify-content: end;
+    display: flex;
+    margin-bottom: -65px;
+}
+
+.about {
+    margin-top: 100px;
+}
+
+.about h2 {
+    display: inline-block;
+    max-width: 380px;
+}
+
+.image-circle {
+    background-color: #c6cdf4;
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+
+.portfolio {
+    margin-top: 130px;
+}
+
+.portfolio .row {
+    margin-bottom: 80px;
+}
+
+.header {
+    background-image: linear-gradient(to bottom right, #B9DCF2, #C6CDF4, #E9D4F2, #E8ED69);
+    border-radius: 0px 0px 100px 100px;
+    padding: 20px 50px 20px 50px;
+}
+
+.footer-form {
+    padding-top: 60px;
+}
+
+.bottom {
+    background-image: linear-gradient(to bottom right, #B9DCF2, #C6CDF4, #E9D4F2, #E8ED69);
+    border-radius: 100px 100px 0px 0px;
+    padding: 0px;
+}
+
+.round-button-container {
+    display: flex;
+    justify-content: end;
+    width: 85%;
+    margin: -75px auto 0;
+}
+
+.round-button {
+    background-color: #E8ED69;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    transition: .3s all;
+}
+
+.round-button:hover {
+    background-color: #c6cdf4;
+    transform: translateX(5px);
+}
+
+.button-arrow {
+    width: 75px;
+}
 
 /*MEDIUM UP STYLES*/
 @media (min-width: 768px) { 
