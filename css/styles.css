@@ -273,29 +273,9 @@ textarea:focus {
 }
 
 #back-to-top {
-    position: fixed;
-    bottom: 50vh;
-    right: -69px;
-    display: flex;
-    opacity: 0;
-    transition: opacity .3s;
-    transform: rotate(90deg);
-    text-decoration: none;
-    color: #323232;
-    padding: 10px;
+    display: none;
 }
 
-#back-to-top img {
-    width: 69px;
-    transform: rotate(-180deg);
-    margin-right: 20px;
-}
-
-#back-to-top p {
-    margin: 0px;
-    text-transform: uppercase;
-    font-family: 'Archivo', sans-serif;
-}
 
 
 /*SMALL UP STYLES*/
@@ -334,6 +314,31 @@ textarea:focus {
 
     h1 {
         font-size: 80px;
+    }
+
+    #back-to-top {
+        position: fixed;
+        bottom: 50vh;
+        right: -69px;
+        display: flex;
+        opacity: 0;
+        transition: opacity .3s;
+        transform: rotate(90deg);
+        text-decoration: none;
+        color: #323232;
+        padding: 10px;
+    }
+    
+    #back-to-top img {
+        width: 69px;
+        transform: rotate(-180deg);
+        margin-right: 20px;
+    }
+    
+    #back-to-top p {
+        margin: 0px;
+        text-transform: uppercase;
+        font-family: 'Archivo', sans-serif;
     }
 
 }
