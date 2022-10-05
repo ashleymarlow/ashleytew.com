@@ -52,6 +52,7 @@ p {
     border-radius: 50px;
     margin: 0 auto;
     display: block;
+    border: 3px solid #c6cdf4;
 }
 
 img {
