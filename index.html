@@ -18,8 +18,8 @@
     <title>Ashley Tew</title>
   </head>
   <body>
-
-    <div class="container-fluid header">
+    <!-- HEADER -->
+    <header class="container-fluid header" id="top">
       <!-- NAVIGATION -->
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="index.html">Ashley<strong>Tew</strong></a>
@@ -34,7 +34,6 @@
           </div>
         </div>
       </nav>
-
       <!-- PRESENTATION -->
       <div class="presentation container">
         <div class="row top-row">
@@ -48,8 +47,7 @@
           </div>
         </div>
       </div>
-    </div>
-
+    </header>
     <!-- MAIN -->
     <main>
 
@@ -149,50 +147,54 @@
       <!-- END PORTFOLIO -->
 
     </main>
-
-    <div class="container-fluid bottom contact" id="contact">
+    <!-- FOOTER -->
+    <footer class="container-fluid bottom contact" id="contact">
       <div class="footer-form container">      
         <h2><span class="secondary-font">let's</span> chat</h2>
-
         <form id="my-form" action="https://formspree.io/f/xbjbodrz" method="POST">
           <p id="my-form-status"></p>
-          <div class="row">
-            <div class="col-12 col-md-6">
-              <label for="full-name">Your Name</label>
-              <input type="text" name="name" id="full-name" placeholder="Type it here :-)" required="">
-            </div>
-            <div class="col-12 col-md-6">
-              <label for="email-address">Your Email</label>
-              <input type="email" name="_replyto" id="email-address" placeholder="Type it here :-)" required="">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 col-md-6">
-              <label for="message">Your Message</label>
-              <textarea rows="5" name="message" id="message" placeholder="Type it here :-)" required=""></textarea>
-              <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="form-button-container">
-                <button class="form-button round-button"><img class="button-arrow" src="images/button-arrow.svg" alt="round button"></button>
+
+          <div id="inner-form">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <label for="full-name">Your Name</label>
+                <input type="text" name="name" id="full-name" placeholder="Type it here :-)" required="">
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="email-address">Your Email</label>
+                <input type="email" name="_replyto" id="email-address" placeholder="Type it here :-)" required="">
               </div>
             </div>
-          </div>
-          
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <label for="message">Your Message</label>
+                <textarea rows="5" name="message" id="message" placeholder="Type it here :-)" required=""></textarea>
+                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-button-container">
+                  <button class="form-button round-button"><img class="button-arrow" src="images/button-arrow.svg" alt="round button"></button>
+                </div>
+              </div>
+            </div>
+          </div>  
+
         </form>
 
-
-
-      <footer>
-        <nav class="navbar navbar-light">
-          <a class="navbar-brand" href="https://dribbble.com/ashleylm" target="_blank">Dribbble</a>
-          <a class="navbar-brand" href="https://www.linkedin.com/in/ashley-marlow-9846547a/" target="_blank">LinkedIn</a>
-          <a class="navbar-brand" href="https://github.com/ashleymarlow" target="_blank">Github</a>
-        </nav>
-      </footer>
+        <div class="footer-links">
+          <nav class="navbar navbar-light">
+            <a class="navbar-brand" href="https://dribbble.com/ashleylm" target="_blank">Dribbble</a>
+            <a class="navbar-brand" href="https://www.linkedin.com/in/ashley-marlow-9846547a/" target="_blank">LinkedIn</a>
+            <a class="navbar-brand" href="https://github.com/ashleymarlow" target="_blank">Github</a>
+          </nav>
+        </div>
 
       </div>
-    </div>
+    </footer>
+    <a href="#top" id="back-to-top">
+      <img class="btt-image" src="images/button-arrow.svg" alt="back to top">
+      <p>Back to Top</p>
+    </a>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
