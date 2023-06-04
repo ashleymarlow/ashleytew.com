@@ -201,6 +201,22 @@ span.secondary-font {
     height: 150px;
 }
 
+.repo-link {
+    background-color: #E8ED69;
+    color: #323232;
+    font-family: 'Archivo';
+    text-decoration-line: none;
+    padding: 10px 20px;
+    margin: 20px 0px 50px 0px;
+    display: inline-block;
+    transition: .3s background-color;
+}
+
+.repo-link:hover {
+    color: #323232;
+    background-color: #c6cdf4;
+}
+
 #full-name {
     margin-bottom: 30px;
 }
